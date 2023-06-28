@@ -1,15 +1,56 @@
 import React from 'react';
 
-function App() {
-  
+// Your First Component - Challenge 1
+
+// export default function Profile() {
+//   return (
+//     <img
+//       src="https://i.imgur.com/lICfvbD.jpg"
+//       alt="Aklilu Lemma"
+//     />
+//   );
+// }
+
+
+
+// Your First Componemt - Challenge 2
+
+// export default function Profile() {
+//   return (
+//     <img src="https://i.imgur.com/jA8hHMpm.jpg" alt="Katsuko Saruhashi" />
+//   );
+// }
+
+
+
+// Your First Component - Challenge 3
+
+// function Profile() {
+//   return (
+//     <img
+//       src="https://i.imgur.com/QIrZWGIs.jpg"
+//       alt="Alan L. Hart"
+//     />
+//   );
+// }
+
+// export default function Gallery() {
+//   return (
+//     <section>
+//       <h1>Amazing scientists</h1>
+//       <Profile />
+//       <Profile />
+//       <Profile />
+//     </section>
+//   );
+// }
+
+
+
+// Your First Component - Challenge 4
+
+export default function Congratulations() {
   return (
-    <div>
-        <div>
-          <h1>My First Component</h1>
-          <h3>외대를 만나면 세계가 보인다</h3>
-        </div>
-    </div>
+    <h1>Good job!</h1>
   );
 }
-
-export default App;
