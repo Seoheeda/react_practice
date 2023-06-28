@@ -408,37 +408,172 @@ import React from 'react';
 
 // Conditional Rendering - Challenge 3
 
-function Drink({ name }) {
-    let plant, content, age;
-    if (name === 'tea') {
-        plant = 'leaf';
-        content = '15–70 mg/cup';
-        age = '4,000+ years';
-    } else if (name === 'coffee') {
-        plant = 'bean';
-        content = '80–185 mg/cup';
-        age = '1,000+ years';
-    }
-    return (
-        <section>
-            <h1>{name}</h1>
-            <dl>
-                <dt>Part of plant</dt>
-                <dd>{plant}</dd>
-                <dt>Caffeine content</dt>
-                <dd>{content}</dd>
-                <dt>Age</dt>
-                <dd>{age}</dd>
-            </dl>
-        </section>
-    );
-}
+// function Drink({ name }) {
+//     let plant, content, age;
+//     if (name === 'tea') {
+//         plant = 'leaf';
+//         content = '15–70 mg/cup';
+//         age = '4,000+ years';
+//     } else if (name === 'coffee') {
+//         plant = 'bean';
+//         content = '80–185 mg/cup';
+//         age = '1,000+ years';
+//     }
+//     return (
+//         <section>
+//             <h1>{name}</h1>
+//             <dl>
+//                 <dt>Part of plant</dt>
+//                 <dd>{plant}</dd>
+//                 <dt>Caffeine content</dt>
+//                 <dd>{content}</dd>
+//                 <dt>Age</dt>
+//                 <dd>{age}</dd>
+//             </dl>
+//         </section>
+//     );
+// }
 
-export default function DrinkList() {
-    return (
-        <div>
-            <Drink name="tea" />
-            <Drink name="coffee" />
-        </div>
-    );
-}
+// export default function DrinkList() {
+//     return (
+//         <div>
+//             <Drink name="tea" />
+//             <Drink name="coffee" />
+//         </div>
+//     );
+// }
+
+
+
+// Rendering Lists - Challenge 1
+
+// import { people } from './data.js';
+// import { getImageUrl } from './utils.js';
+
+// export default function List() {
+//   const chemists = people.filter(person =>
+//     person.profession === 'chemist'
+//     );
+//   const everyoneElse = people.filter(person =>
+//     person.profession !== 'chemist'
+//     );
+//   return (
+//     <article>
+//       <h1>Scientists</h1>
+//       <h1>Chemists</h1>
+//       <ul>
+//         {chemists.map(person =>
+//         <li key={person.id}>
+//           <img
+//             src={getImageUrl(person)}
+//             alt={person.name}
+//           />
+//           <p>
+//             <b>{person.name}:</b>
+//             {' ' + person.profession + ' '}
+//             known for {person.accomplishment}
+//           </p>
+//         </li>
+//         )}
+//       </ul>
+//       <h1>Everyone Else</h1>
+//       <ul>
+//         {everyoneElse.map(person =>
+//           <li key={person.id}>
+//             <img
+//               src={getImageUrl(person)}
+//               alt={person.name}
+//             />
+//             <p>
+//               <b>{person.name}:</b>
+//               {' ' + person.profession + ' '}
+//               known for {person.accomplishment}
+//             </p>
+//           </li>
+//         )}
+//       </ul>
+//     </article>
+//   );
+// }
+
+
+
+// Rendering Lists - Challenge 2
+
+// import { recipes } from './data.js';
+
+// export default function RecipeList() {
+//   return (
+//     <div>
+//       <h1>Recipes</h1>
+//       {recipes.map(recipe =>
+//         <div key={recipe.id}>
+//           <h2>{recipe.name}</h2>
+//           <ul>
+//             {recipe.ingredients.map(ingredient =>
+//               <li key={ingredient}>
+//                 {ingredient}
+//               </li>
+//             )}
+//           </ul>
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
+
+
+
+// Rendering Lists - Challenge 3  
+
+
+
+// Rendering Lists - Challenge 4
+
+
+
+// Keeping Components Pure - Challenge 1 
+// 왜 여기선 실행 안돼!!!!
+
+// export default function Clock({ time }) {
+//     let hours = time.getHours();
+//     let className;
+//     if (hours >= 0 && hours <= 6) {
+//       className = 'night';
+//     } else {
+//       className = 'day';
+//     }
+//     return (
+//       <h1 className={className}>
+//         {time.toLocaleTimeString()}
+//       </h1>
+//     );
+//   }
+
+
+
+// Keeping Components Pure - Challenge 2
+
+// import Profile from './Profile.js';
+
+// export default function App() {
+//   return (
+//     <>
+//       <Profile person={{
+//         imageId: 'lrWQx8l',
+//         name: 'Subrahmanyan Chandrasekhar',
+//       }} />
+//       <Profile person={{
+//         imageId: 'MK3eW3A',
+//         name: 'Creola Katherine Johnson',
+//       }} />
+//     </>
+//   )
+// }
+
+
+
+// Keeping Components Pure - Challenge 3
+
+
+
