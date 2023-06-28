@@ -49,8 +49,24 @@ import React from 'react';
 
 // Your First Component - Challenge 4
 
-export default function Congratulations() {
+// export default function Congratulations() {
+//   return (
+//     <h1>Good job!</h1>
+//   );
+// }
+
+
+
+// Importing and Exporting Components - Challenge 1
+
+import Gallery from './Gallery.js';
+import Profile from './Profile.js';
+
+export default function App() {
   return (
-    <h1>Good job!</h1>
+    <div>
+      <Profile />
+      <Gallery />
+    </div>
   );
 }
